@@ -1,4 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400&display=swap');
+@font-face {
+  font-family: "DINPro";
+  src: url('/fonts/DINProRegular.otf') format("opentype");
+}
+
+@font-face {
+  font-family: "DINPro-Bold";
+  font-weight: bold;
+  src: url('/fonts/DINProBold.otf') format("opentype");
+}
 
 :root {
   --primaryColor: #fff;
@@ -6,12 +15,10 @@
   --hoverColor: #65686aa0;
 }
   
-html {
-  box-sizing: border-box;
-}
-
 body {
   margin: 0;
-  background: var(--primaryColor);
-  font-family: Nunito, sans-serif;
+}
+
+h1 {
+  font-family: 'DINPro', sans-serif;
 }
