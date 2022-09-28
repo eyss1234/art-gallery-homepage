@@ -19,7 +19,7 @@ body {
   margin: 0;
 }
 
-h1, h2 {
+h1, h2, h5, p {
   font-family: 'DINPro', sans-serif;
 }
 
@@ -59,13 +59,33 @@ h1, h2 {
 }
 
 .news-container img {
-  height: 300px;
   width: 100%;
   object-fit: cover;
 }
 
 /* Channel */
 .channel img {
+  width: 100%;
+  object-fit: cover;
+}
+
+/* Artists */
+
+.artists .artists-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 16px;
+  z-index: 0;
+}
+
+
+
+.artists p {
+  margin: 0;
+
+}
+
+.artists img{
   width: 100%;
   object-fit: cover;
 }
