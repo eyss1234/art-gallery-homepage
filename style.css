@@ -32,21 +32,41 @@ h1, h2, h5, p {
   display: block;
 }
 
+.navbar-toggler {
+  border: none!important;
+}
+
+.navbar-toggler-icon {
+  background: url('/icons/menu-outline.svg')!important;
+  width: 25px!important;
+}
+
+.navbar-nav {
+  text-align: end;
+}
+
 /* Banner */
 
 .carousel-indicators li {
-  height: 10px!important;
-  width: 10px!important;
+  height: 13px!important;
+  width: 13px!important;
   border-radius: 50%;
-  background-color: var(--secondaryColor)!important;;
+  background-color: var(--secondaryColor)!important;
+}
+
+.carousel-indicators li::active {
+  background-color: red!important;
 }
 
 .carousel-inner { 
-  padding-bottom: 100px!important; 
+  padding-bottom: 100px!important;
+ 
 }
 
-.carousel-caption { 
-  bottom: -100px!important; 
+.carousel-caption {
+  text-align: start!important;
+  bottom: -100px!important;
+  color: var(--secondaryColor)!important;
 }
 
 /* News & Events */

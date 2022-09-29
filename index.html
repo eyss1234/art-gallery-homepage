@@ -14,21 +14,22 @@
   </head>
   <body>
     <!-- Navbar-->
-    <nav class="navbar navbar-light">
-      <a class="navbar-brand" href="#"><h2>Art Gallery</h2></a>   
-      <form class="form-inline my-2 my-lg-0">
-        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn my-2 my-sm-0" type="submit"><span class="icon-search"></span></button>
-      </form>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav">
-          <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-          <a class="nav-item nav-link" href="#">Features</a>
-          <a class="nav-item nav-link" href="#">Pricing</a>
-          <a class="nav-item nav-link disabled" href="#">Disabled</a>
+    <nav class="container navbar navbar-light">
+      <a class="navbar-brand" href="#"><h2>Art Gallery</h2></a>
+      <div class="d-flex">
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn my-2 my-sm-0" type="submit"><span class="icon-search"></span></button>
+        </form>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon mt-1"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-item nav-link active" href="#">Home<span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link" href="#">Artists</a>
+            <a class="nav-item nav-link" href="#">About</a>
+          </div>
         </div>
       </div>
     </nav>
@@ -40,6 +41,8 @@
           <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
           <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
           <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
         </ol>
         <div class="carousel-inner">
           <div class="carousel-item active">
@@ -61,6 +64,20 @@
             <div class="carousel-caption d-none d-md-block">
               <h5 class="text-success">3rd Description Text</h5>
               <p class="text-success">3rd more text</p>
+            </div> 
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="/img/banner.jpg" alt="Third slide">
+            <div class="carousel-caption d-none d-md-block">
+              <h5 class="text-success">4th Description Text</h5>
+              <p class="text-success">4th more text</p>
+            </div> 
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="/img/banner.jpg" alt="Third slide">
+            <div class="carousel-caption d-none d-md-block">
+              <h5 class="text-success">5th Description Text</h5>
+              <p class="text-success">5th more text</p>
             </div> 
           </div>
           
