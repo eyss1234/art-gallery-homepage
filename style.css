@@ -107,7 +107,7 @@ h1, h2, h4, h5, p {
 
 .artists p {
   margin: 0;
-
+  padding-bottom: 6px;
 }
 
 .artists img{
