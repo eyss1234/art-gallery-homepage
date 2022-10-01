@@ -136,3 +136,18 @@ h1, h2, h4, h5, p {
   width: 30px;
   display: block;
 }
+
+/* Mobile changes */
+@media only screen and (max-width: 480px) {
+  .news-container {
+    grid-template-columns: 1fr;
+  }
+
+  iframe {
+    height: 280px;
+  }
+
+  #bootstrap-overrides .carousel-indicators {
+    display: none;
+   }
+}
