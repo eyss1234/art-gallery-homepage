@@ -14,7 +14,9 @@
   --secondaryColor: #21292c;
   --hoverColor: #65686aa0;
 }
-  
+
+* {box-sizing:border-box}
+
 body {
   margin: 0;
 }
@@ -46,25 +48,25 @@ h1, h2, h4, h5, p {
 }
 
 /* Banner */
-
-.carousel-indicators {
-  
-}
-.carousel-indicators li {
-  height: 14px!important;
-  width: 14px!important;
+/* Slideshow container */
+#bootstrap-overrides .carousel-indicators li{
+  background-color: red;
+  height:14px;
+  width: 14px;
   border-radius: 50%;
-  background-color: var(--secondaryColor)!important;
-}
-.carousel-inner { 
-  padding-bottom: 100px!important;
-}
+ }
 
-.carousel-caption {
-  text-align: start!important;
-  bottom: -100px!important;
-  color: var(--secondaryColor)!important;
-}
+ #bootstrap-overrides .carousel-indicators {
+  justify-content: space-between;
+  margin: 0;
+ }
+
+ #bootstrap-overrides .carousel-control-next{
+  text-align: right;
+  width: 15%;
+  margin-bottom: 35px;
+ }
+
 
 /* News & Events */
 
@@ -113,6 +115,11 @@ h1, h2, h4, h5, p {
 .artists img{
   width: 100%;
   object-fit: cover;
+  display: none;
+}
+
+.artists p:hover + .artists img {
+  display: block;
 }
 
 /* Footer */
