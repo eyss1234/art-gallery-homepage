@@ -34,13 +34,13 @@ h1, h2, h4, h5, p {
   display: block;
 }
 
-.navbar-toggler {
-  border: none!important;
+#bootstrap-overrides .navbar-toggler {
+  border: none;
 }
 
-.navbar-toggler-icon {
-  background: url('/icons/menu-outline.svg')!important;
-  width: 25px!important;
+#bootstrap-overrides .navbar-toggler-icon {
+  background: url('/icons/menu-outline.svg');
+  width: 25px;
 }
 
 .navbar-nav {
@@ -106,21 +106,17 @@ h1, h2, h4, h5, p {
 }
 
 
-
 .artists p {
   margin: 0;
   padding-bottom: 6px;
 }
 
-.artists img{
+.artists img {
   width: 100%;
   object-fit: cover;
   display: none;
 }
 
-.artists p:hover + .artists img {
-  display: block;
-}
 
 /* Footer */
 
