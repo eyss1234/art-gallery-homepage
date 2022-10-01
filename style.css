@@ -38,17 +38,16 @@ h1, h2, h4, h5, p {
   border: none;
 }
 
+
 #bootstrap-overrides .navbar-toggler-icon {
   background: url('/icons/menu-outline.svg');
   width: 25px;
 }
 
-#bootstrap-overrides #search-input {
-  display: none;
-}
 
-.navbar-nav {
-  text-align: end;
+
+#search-input {
+  display: none;
 }
 
 /* Banner */

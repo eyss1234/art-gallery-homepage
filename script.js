@@ -6,10 +6,10 @@ function hide(id) {
 }
 
 function displaySearch() {
-  let box = document.getElementById("search-input");
-  if (box.style.display === "none") {
-    box.style.display = "block";
+  let inputBox = document.getElementById("search-input");
+  if (inputBox.style.display === "none") {
+    inputBox.style.display = "block";
   } else {
-    box.style.display = "none";
+    inputBox.style.display = "none";
   }
 }
