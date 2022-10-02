@@ -93,7 +93,6 @@ nav li a:hover {
 }
   
 
-
 /* SLide in animation with delay for each nav item */
 .slide-in-1 {
   animation: slide-in 0.4s linear 0.2s both;
@@ -314,6 +313,11 @@ section {
   iframe {
     height: 280px;
   }
+
+  nav,
+  nav ul {
+    height: 35vh;
+  } 
 
   #bootstrap-overrides .carousel-indicators {
     display: none;
