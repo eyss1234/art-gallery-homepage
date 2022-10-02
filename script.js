@@ -5,14 +5,17 @@ function hide(id) {
   document.getElementById(id).style.display = 'none';
 }
 
-function displaySearch() {
-  let inputBox = document.getElementById("search-input");
-  if (inputBox.style.display === "none") {
-    inputBox.style.display = "block";
+const searchBox = document.getElementById("search-input");
+const btn = document.getElementById("search-toggle");
+btn.addEventListener('click', function handleClick() {
+  event.preventDefault();
+  if (searchBox.style.display === 'none') {
+    searchBox.style.display = 'block';
   } else {
-    inputBox.style.display = "none";
+    searchBox.style.display = 'none';
   }
-}
+});
+
 
 const menuBars = document.getElementById('menu-bars');
 const overlay = document.getElementById('overlay');
