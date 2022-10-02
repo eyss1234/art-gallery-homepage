@@ -14,33 +14,30 @@
   </head>
   <body id="bootstrap-overrides">
     <!-- Navbar-->
-    <nav class="container navbar navbar-light p-0"> 
-      <a class="navbar-brand" href="#"><h2>Art Gallery</h2></a>
-      <div class="row">
-        <form class="form-inline my-2 my-lg-0">
-          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" id="search-input">
-          <button class="btn my-2 my-sm-0" type="submit" onclick="displaySearch()"><span class="icon-search"></span></button>
-        </form> 
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon mt-1"></span>
-        </button>
-        <div class="collapse navbar-collapse"  id="navbarTogglerDemo02">
-          <div class="navbar-nav">
-            <a class="nav-item nav-link active border-bottom" href="#"><h2>Home</h2><span class="sr-only">(current)</span></a>
-            <a class="nav-item nav-link border-bottom" href="#"><h2>Art & Artists</h2></a>
-            <a class="nav-item nav-link border-bottom" href="#"><h2>Exhibitions</h2></a>
-            <a class="nav-item nav-link border-bottom" href="#"><h2>News</h2></a>
-            <a class="nav-item nav-link border-bottom" href="#"><h2>About</h2></a>
-            <a class="nav-item nav-link" href="#"><h2>Private area</h2></a>
-          </div>
-        </div>
+    <section class="container d-flex justify-content-between p-0" id="home">
+      <a class="text-reset" href="#"><h2>Art Gallery</h2></a>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" id="search-input" style="display:none;">
+        <button class="btn p-0 mb-2" type="submit" onclick="displaySearch()"><span class="icon-search"></span></button>
+      </form>
+      <div class="menu-bars" id="menu-bars">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
       </div>
-
-      
-    </nav>
-
-    </nav>
-    <!-- Sections -->
+    </section>
+    <div class="overlay overlay-slide-left container p-0" id="overlay">  
+      <nav>
+        <ul>
+          <li class="slide-out-1 border-bottom" id="nav-1"><a href="#home"><h2>Home</h2></a></li>
+          <li class="slide-out-2 border-bottom" id="nav-2"><a href="#art-artists"><h2>Art & Artists</h2></a></li>
+          <li class="slide-out-3 border-bottom" id="nav-3"><a href="#exhibitions"><h2>Exhibitions</h2></a></li>
+          <li class="slide-out-4 border-bottom" id="nav-4"><a href="#news"><h2>News</h2></a></li>
+          <li class="slide-out-5 border-bottom" id="nav-5"><a href="#"><h2>News</h2></a></li>
+          <li class="slide-out-6 border-bottom" id="nav-6"><a href="#"><h2>Private Area</h2></a></li>
+        </ul>
+      </nav>
+    </div>
     <!-- Banner -->
     <div id="carouselExampleIndicators" class="container p-0 carousel slide" data-ride="carousel">
       <div class="carousel-inner">
@@ -82,7 +79,7 @@
       </a>
     </div>
     <!-- News and Events -->
-    <section class="container mt-4 border-top p-0">
+    <section class="container mt-4 border-top p-0" id="news">
       <div class="d-flex justify-content-between">
         <h4 class="mt-3"><strong>News & Events</strong></h4> 
         <a class="d-flex text-reset" href="#">
@@ -126,7 +123,7 @@
       </div>
     </section>
     <!-- Channel -->
-    <section class="channel container mt-4 p-0 border-top">
+    <section class="channel container mt-4 p-0 border-top" id="exhibitions">
       <div data-aos="fade-rin" data-aos-delay="100">
         <h4 class="mt-3"><strong>Channel</strong></h4>
         <iframe width="100%" height="720px"
@@ -135,7 +132,7 @@
         <div class="video-caption mt-2 row">
           <p class="col-12 col-sm-6"><strong>Anselm Kiefer in conversation with Tim Marlow in 
             the Auditorium</strong></p>
-          <p class="col-12 col-sm-">In this film Anselm Kiefer discusses his work and 
+          <p class="col-12 col-sm-6">In this film Anselm Kiefer discusses his work and 
             his exhibition ‘Walhalla’ at White Cube Bermondsey 
             with Tim Marlow</p>
         </div>
@@ -143,7 +140,7 @@
 
     </section>
     <!-- Artists-->
-    <section class="artists container mt-5 border-top p-0">
+    <section class="artists container mt-5 border-top p-0" id="art-artists">
       <h4 class="my-3"><strong>Artists</strong></h4>
       <div class="row">
         <div class="col-md-3 col-sm-12 artists-names">
@@ -217,7 +214,7 @@
       <!-- Section: Links and Social media -->
       <section class="container d-flex justify-content-between justify-content-lg-between py-3 px-0 border-bottom">
         <!-- Left -->
-        <div class="d-flex">
+        <div class="d-flex text-white">
           <h5><a href="#!" class="text-reset mr-3"><strong>Newsletter</strong></a></h5>
           <h5><a href="#!" class="text-reset mr-3"><strong>Contact</strong></a></h5>
           <h5><a href="#!" class="text-reset mr-3"><strong>Press Room</strong></a></h5>
@@ -236,7 +233,7 @@
 
       <!-- Footer: Contact -->
       <section class="">
-        <div class="container mt-1 border-bottom">
+        <div class="container mt-1 border-bottom text-white">
           <div class="row mt-3">
             <div class="">
               <h5 class="mb-4">ART GALLERY</h5>
