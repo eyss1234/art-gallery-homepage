@@ -10,6 +10,7 @@ Simple Art Gallery Landing Page
 - Animations on hover
 - Embedded video
 - Mobile friendly
+- Hover Artist name to display Art
 
 ### Tools
 - Bootstrap
