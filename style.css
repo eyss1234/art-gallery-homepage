@@ -28,7 +28,7 @@ h1, h2, h4, h5, p {
 /* Navbar */
 
 .icon-search {
-  background: url('/icons/search-outline.svg');
+  background: url('./icons/search-outline.svg');
   height: 30px;
   width: 30px;
   display: block;
